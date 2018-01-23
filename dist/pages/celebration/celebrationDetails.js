@@ -39,7 +39,7 @@ Page({
     })
     // this.getCelebrationDetailsData(options.celebrationid);
 
-    this.getCelebrationDetailsData(1);
+    this.getCelebrationDetailsData(this.data.celebrationid);
     this.checkShoppingCar();
 
   },
