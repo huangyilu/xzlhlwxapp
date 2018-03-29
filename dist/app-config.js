@@ -7,6 +7,7 @@ export const apiBase = 'https://www.xqfb666.com/interface/'
 // 本地 测试服http://192.168.1.38:8080/interface/'
 // export const apiBase = 'http://192.168.1.162:8080/interface/'
 // export const apiBase = 'http://192.168.1.38:9003/'
+
 export const appId = 'wx3cc6695fda4d8db4'
 export const hotelId = '13518765435'
 

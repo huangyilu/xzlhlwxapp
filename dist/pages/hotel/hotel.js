@@ -5,8 +5,6 @@ import * as HotelDataService from '../../services/hotel-service';
 import * as AuthService from '../../services/auth-service';
 import { flattenDeep } from '../../utils/npm/lodash-wx';
 
-// var amapFile = require('../../libs/amap-wx.js');
-// var amapKey = '2a397d94c316bfaa79acf7397bcc4dbb';
 var QQMapWX = require('../../libs/qqmap-wx-jssdk.js');
 var qqmapKey = 'JJSBZ-TZ4CO-GW3WF-SLT4O-KR4BO-D5FGW';
 
@@ -37,12 +35,8 @@ const pageOptions = {
   //事件处理函数
   onLoad: function () {
 
-    // 授权登录
-    // AuthService.wxappLogin();
     // 取数据
-    this.getHotelData();
-
-    
+    this.getHotelData();    
 
   },
 
@@ -106,8 +100,7 @@ const pageOptions = {
     qqmapsdk.geocoder({
       address: me.data.hotelInfo.hotelLocation,
       success: function (res) {
-        // console.log("endLat = " + res.result.location.lat);
-        // console.log("endng = " + res.result.location.lng);
+
         wx.openLocation({
           name: me.data.hotelInfo.hotelName,
           address: me.data.hotelInfo.hotelLocation,
